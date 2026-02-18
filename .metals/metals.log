@@ -1,0 +1,272 @@
+2026.02.17 17:34:51 INFO  Started: Metals version 1.6.5 in folders '/Users/eloiseleblanc/Desktop/Workspace/jee_examen' for client Visual Studio Code 1.109.4.
+2026.02.17 17:34:51 INFO  Memory monitor started
+2026.02.17 17:34:51 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.17 17:34:52 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:03 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java
+2026.02.17 17:35:03 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:03 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:05 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java
+2026.02.17 17:35:05 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java
+2026.02.17 17:35:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/Category.java. Using fallback presentation compiler.
+2026.02.17 17:35:19 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:19 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:19 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:20 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java
+2026.02.17 17:35:20 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:20 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:20 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/PartieStatus.java. Using fallback presentation compiler.
+2026.02.17 17:35:40 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:35:40 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:35:41 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:35:48 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java
+2026.02.17 17:35:48 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:35:48 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java
+2026.02.17 17:35:48 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:35:48 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Joueur.java. Using fallback presentation compiler.
+2026.02.17 17:36:12 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:12 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:12 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:13 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java
+2026.02.17 17:36:13 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:13 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:13 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/enums/RuntimeGameStatus.java. Using fallback presentation compiler.
+2026.02.17 17:36:31 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:36:31 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:36:31 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:36:36 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java
+2026.02.17 17:36:36 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:36:36 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java
+2026.02.17 17:36:36 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:36:36 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/Parties.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/ColonneScore.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/ColonneScore.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/ColonneScore.java
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/ColonneScore.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/entity/ColonneScore.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/JoueurRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/JoueurRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/JoueurRepository.java
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/JoueurRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/JoueurRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/PartiesRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/PartiesRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/PartiesRepository.java
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/PartiesRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/PartiesRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:23 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:37:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/repository/ColonneScoreRepository.java. Using fallback presentation compiler.
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/GameState.java. Using fallback presentation compiler.
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/GameState.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/GameState.java
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/GameState.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/GameState.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameStateManager.java. Using fallback presentation compiler.
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameStateManager.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameStateManager.java
+2026.02.17 17:38:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameStateManager.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameStateManager.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:07 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:07 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthRegisterRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:07 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:07 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:07 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:06 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthLoginRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthResponse.java
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/AuthResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LobbyReadyResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LobbyReadyResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LobbyReadyResponse.java
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LobbyReadyResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LobbyReadyResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LockRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LockRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LockRequest.java
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LockRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/LockRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreRequest.java
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreRequest.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:45 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreSheetDto.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreSheetDto.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreSheetDto.java
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreSheetDto.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/ScoreSheetDto.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/GameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/GameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/GameResponse.java
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/GameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/GameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:46 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:38:47 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/HallOfFameResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:34 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:39:34 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java
+2026.02.17 17:39:34 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:39:34 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/runtime/LobbyEntry.java. Using fallback presentation compiler.
+2026.02.17 17:39:41 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java
+2026.02.17 17:39:41 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:41 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:39:41 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/dto/RollResponse.java. Using fallback presentation compiler.
+2026.02.17 17:40:04 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java. Using fallback presentation compiler.
+2026.02.17 17:40:04 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java. Using fallback presentation compiler.
+2026.02.17 17:40:04 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java
+2026.02.17 17:40:04 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java. Using fallback presentation compiler.
+2026.02.17 17:40:04 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java. Using fallback presentation compiler.
+2026.02.17 17:40:04 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameRow.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AppUserDetailsService.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AppUserDetailsService.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AppUserDetailsService.java
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AppUserDetailsService.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AppUserDetailsService.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/JwtAuthenticationFilter.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/JwtAuthenticationFilter.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/JwtAuthenticationFilter.java
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/JwtAuthenticationFilter.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/JwtAuthenticationFilter.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java. Using fallback presentation compiler.
+2026.02.17 17:41:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java. Using fallback presentation compiler.
+2026.02.17 17:41:25 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java
+2026.02.17 17:41:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java. Using fallback presentation compiler.
+2026.02.17 17:41:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java. Using fallback presentation compiler.
+2026.02.17 17:41:25 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/SecurityConfig.java. Using fallback presentation compiler.
+2026.02.17 17:42:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java. Using fallback presentation compiler.
+2026.02.17 17:42:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java. Using fallback presentation compiler.
+2026.02.17 17:42:23 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java
+2026.02.17 17:42:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java. Using fallback presentation compiler.
+2026.02.17 17:42:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java. Using fallback presentation compiler.
+2026.02.17 17:42:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/ScoreService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthService.java
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/DiceService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/DiceService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/DiceService.java
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/DiceService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/DiceService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:42:59 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:42:59 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:42:58 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/AuthenticatedUserService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:08 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:10 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/LobbyService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/LobbyService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/LobbyService.java
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/LobbyService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/LobbyService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameService.java
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/HallOfFameService.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/AuthController.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/AuthController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/AuthController.java
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/AuthController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/AuthController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java. Using fallback presentation compiler.
+2026.02.17 17:45:38 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java
+2026.02.17 17:45:39 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java. Using fallback presentation compiler.
+2026.02.17 17:45:39 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/LobbyController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/GameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/GameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/GameController.java
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/GameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/GameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/HallOfFameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/HallOfFameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/HallOfFameController.java
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/HallOfFameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/controller/HallOfFameController.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/OpenApiConfig.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/OpenApiConfig.java. Using fallback presentation compiler.
+2026.02.17 18:22:23 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/OpenApiConfig.java
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/OpenApiConfig.java. Using fallback presentation compiler.
+2026.02.17 18:22:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/OpenApiConfig.java. Using fallback presentation compiler.
+2026.02.17 18:22:22 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:22:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:22:24 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java
+2026.02.17 18:22:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:22:24 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:22:23 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:53:54 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/config/DataSeeder.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 18:54:17 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 18:54:17 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/JwtService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:17 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:17 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:16 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:18 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/main/java/com/example/jee/examen/service/GameService.java. Using fallback presentation compiler.
+2026.02.17 18:54:33 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:54:33 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:54:33 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java
+2026.02.17 18:54:33 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:54:33 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:54:33 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:54:44 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
+2026.02.17 18:55:05 WARN  no build target for: /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java
+2026.02.17 18:55:05 INFO  no build target found for /Users/eloiseleblanc/Desktop/Workspace/jee_examen/src/test/java/com/example/jee/examen/service/ScoreServiceTest.java. Using fallback presentation compiler.
