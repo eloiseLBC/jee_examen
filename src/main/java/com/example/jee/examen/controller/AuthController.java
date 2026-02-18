@@ -7,7 +7,9 @@ import com.example.jee.examen.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/auth")
@@ -24,7 +26,11 @@ public class AuthController {
 
     @PostMapping("/login")
     public AuthResponse login(@Valid @RequestBody AuthLoginRequest request) {
-        String token = authService.login(request);
-        return new AuthResponse(token);
+        try {
+            String token = authService.login(request);
+            return new AuthResponse(token);
+        } catch (AuthenticationException e) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Pseudo ou mot de passe incorrect");
+        }
     }
 }

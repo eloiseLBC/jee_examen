@@ -1,0 +1,27 @@
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yam-app
+    ports:
+      - "8080:8080"
+    networks:
+      - yam-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: yam-frontend
+    ports:
+      - "5173:80"
+    networks:
+      - yam-network
+    depends_on:
+      - app
+
+networks:
+  yam-network:
+    driver: bridge
