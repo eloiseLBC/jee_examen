@@ -22,6 +22,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static org.springframework.http.HttpStatus.*;
+import static com.example.jee.examen.enums.RuntimeGameStatus.FINISHED;
 
 @Service
 @RequiredArgsConstructor
@@ -86,7 +87,15 @@ public class GameService {
     public RollResponse roll(Long gameId, Long playerId) {
         GameState state = getStateOrThrow(gameId);
         assertPlayerInGame(gameId, playerId);
+        if (state.getStatus() == FINISHED) {
+            throw new ResponseStatusException(CONFLICT, "La partie est déjà terminée");
+        }
         applyTimeoutPenaltyIfNeeded(gameId, state);
+        // Si le timeout vient de terminer la partie → on retourne sans exception (commit OK)
+        // Le frontend détectera TERMINE via le prochain poll
+        if (state.getStatus() == FINISHED) {
+            return buildTimeoutFinishedRollResponse(gameId);
+        }
         assertActivePlayer(state, playerId);
 
         if (state.getRollCount() >= 3) {
@@ -108,7 +117,14 @@ public class GameService {
     public RollResponse lockAndRoll(Long gameId, Long playerId, List<Integer> lockedIndexes) {
         GameState state = getStateOrThrow(gameId);
         assertPlayerInGame(gameId, playerId);
+        if (state.getStatus() == FINISHED) {
+            throw new ResponseStatusException(CONFLICT, "La partie est déjà terminée");
+        }
         applyTimeoutPenaltyIfNeeded(gameId, state);
+        // Si le timeout vient de terminer la partie → commit propre, le frontend poll détectera TERMINE
+        if (state.getStatus() == FINISHED) {
+            return buildTimeoutFinishedRollResponse(gameId);
+        }
         assertActivePlayer(state, playerId);
 
         if (state.getRollCount() >= 3) {
@@ -139,7 +155,16 @@ public class GameService {
     public GameResponse score(Long gameId, Long playerId, Category category) {
         GameState state = getStateOrThrow(gameId);
         assertPlayerInGame(gameId, playerId);
+        if (state.getStatus() == FINISHED) {
+            throw new ResponseStatusException(CONFLICT, "La partie est déjà terminée");
+        }
         applyTimeoutPenaltyIfNeeded(gameId, state);
+        // Si un timeout a terminé la partie, on retourne l'état final au lieu de continuer
+        if (state.getStatus() == FINISHED) {
+            Parties partie = getPartie(gameId);
+            List<ColonneScore> sheets = colonneScoreRepository.findByIdPartieOrderByIdJoueurAsc(gameId);
+            return buildGameResponse(partie, state, sheets);
+        }
         assertActivePlayer(state, playerId);
 
         ColonneScore sheet = getSheet(gameId, playerId);
@@ -183,7 +208,7 @@ public class GameService {
 
     private GameResponse completeTurnOrFinish(Long gameId, GameState state) {
         List<ColonneScore> sheets = colonneScoreRepository.findByIdPartieOrderByIdJoueurAsc(gameId);
-        boolean finished = sheets.stream().allMatch(scoreService::allCategoriesFilled);
+        boolean finished = sheets.stream().anyMatch(scoreService::allCategoriesFilled);
 
         Parties partie = getPartie(gameId);
         if (finished) {
@@ -213,6 +238,21 @@ public class GameService {
         long now = System.currentTimeMillis();
         state.setTurnStartedAt(now);
         state.setTurnDeadlineAt(now + TURN_DURATION_MS);
+    }
+
+    /** Retourne un RollResponse neutre quand la partie vient de se terminer par timeout.
+     *  Ne lance PAS d'exception → la transaction commite → DB = TERMINE → le poll détecte la fin. */
+    private RollResponse buildTimeoutFinishedRollResponse(Long gameId) {
+        List<ColonneScore> allSheets = colonneScoreRepository.findByIdPartieOrderByIdJoueurAsc(gameId);
+        return RollResponse.builder()
+                .dice(new int[]{0, 0, 0, 0, 0})
+                .locked(new boolean[]{false, false, false, false, false})
+                .rollCount(0)
+                .rollsLeft(0)
+                .turnDeadlineAt(0L)
+                .possibleScores(Collections.emptyMap())
+                .scores(toScoreSheetDtos(allSheets))
+                .build();
     }
 
     private RollResponse buildRollResponse(GameState state, ColonneScore sheet, Long gameId) {
