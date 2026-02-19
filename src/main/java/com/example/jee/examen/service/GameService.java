@@ -203,7 +203,10 @@ public class GameService {
         scoreService.recomputeTotals(sheet, state.getExtraYamCount().getOrDefault(currentPlayerId, 0));
         colonneScoreRepository.save(sheet);
 
-        completeTurnOrFinish(gameId, state);
+        // Switch to next player's turn
+        switchToNextPlayer(state);
+        Parties partie = getPartie(gameId);
+        partiesRepository.save(partie);
     }
 
     private GameResponse completeTurnOrFinish(Long gameId, GameState state) {
@@ -335,5 +338,36 @@ public class GameService {
     private GameState getStateOrThrow(Long gameId) {
         return gameStateManager.get(gameId)
                 .orElseThrow(() -> new ResponseStatusException(NOT_FOUND, "Etat runtime introuvable"));
+    }
+
+    @Transactional
+    public GameResponse abandon(Long gameId, Long playerId) {
+        assertPlayerInGame(gameId, playerId);
+        Parties partie = getPartie(gameId);
+        if (partie.getStatus() == PartieStatus.TERMINE || partie.getStatus() == PartieStatus.ABANDON) {
+            throw new ResponseStatusException(CONFLICT, "La partie est déjà terminée");
+        }
+
+        // Trouver l'adversaire
+        List<ColonneScore> sheets = colonneScoreRepository.findByIdPartieOrderByIdJoueurAsc(gameId);
+        Long opponentId = sheets.stream()
+                .map(ColonneScore::getIdJoueur)
+                .filter(id -> !Objects.equals(id, playerId))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(INTERNAL_SERVER_ERROR, "Impossible de trouver l'adversaire"));
+
+        // Mettre à jour la partie
+        partie.setStatus(PartieStatus.ABANDON);
+        partie.setIdVainqueur(opponentId);
+        partiesRepository.save(partie);
+
+        // Mettre à jour l'état runtime
+        GameState state = gameStateManager.get(gameId).orElse(null);
+        if (state != null) {
+            state.setStatus(RuntimeGameStatus.FINISHED);
+        }
+
+        // Retourner l'état final
+        return buildGameResponse(partie, state, sheets);
     }
 }

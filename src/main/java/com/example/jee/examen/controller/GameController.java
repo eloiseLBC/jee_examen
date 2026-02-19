@@ -42,4 +42,10 @@ public class GameController {
         Joueur joueur = authenticatedUserService.currentUser();
         return gameService.score(gameId, joueur.getId(), request.getCategory());
     }
+
+    @PostMapping("/{gameId}/abandon")
+    public GameResponse abandon(@PathVariable Long gameId) {
+        Joueur joueur = authenticatedUserService.currentUser();
+        return gameService.abandon(gameId, joueur.getId());
+    }
 }

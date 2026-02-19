@@ -20,8 +20,8 @@ public interface ColonneScoreRepository extends JpaRepository<ColonneScore, Long
         from ColonneScore c
         join Joueur j on j.id = c.idJoueur
         join Parties p on p.id = c.idPartie
-        where p.status = :status
+        where p.status in :statuses
         order by c.scoreTotal desc
         """)
-    List<HallOfFameRow> findTopByPartieStatus(PartieStatus status, Pageable pageable);
+    List<HallOfFameRow> findTopByPartieStatus(List<PartieStatus> statuses, Pageable pageable);
 }

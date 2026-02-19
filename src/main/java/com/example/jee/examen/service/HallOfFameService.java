@@ -18,7 +18,7 @@ public class HallOfFameService {
     public HallOfFameResponse top(int limit) {
         int normalizedLimit = Math.max(1, Math.min(limit, 100));
         List<HallOfFameRow> rows = colonneScoreRepository.findTopByPartieStatus(
-                PartieStatus.TERMINE,
+                List.of(PartieStatus.TERMINE, PartieStatus.ABANDON),
                 PageRequest.of(0, normalizedLimit)
         );
 

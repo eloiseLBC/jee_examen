@@ -78,6 +78,32 @@
         </p>
       </div>
 
+      <!-- Bouton d'abandon (toujours visible sauf quand la partie est terminée) -->
+      <div v-if="!isFinished" class="abandon-section card">
+        <button
+          class="btn-abandon"
+          @click="showAbandonModal = true"
+          :disabled="actionLoading"
+        >
+          🚪 Abandonner la partie
+        </button>
+      </div>
+
+      <!-- Modal de confirmation d'abandon -->
+      <div v-if="showAbandonModal" class="modal-overlay" @click="showAbandonModal = false">
+        <div class="modal-content" @click.stop>
+          <h3>Abandonner la partie</h3>
+          <p>Êtes-vous sûr de vouloir abandonner cette partie ?</p>
+          <p class="warning-text">⚠️ Votre adversaire remportera automatiquement la victoire.</p>
+          <div class="modal-actions">
+            <button class="btn-secondary" @click="showAbandonModal = false">Annuler</button>
+            <button class="btn-abandon" @click="handleAbandon" :disabled="actionLoading">
+              {{ actionLoading ? 'Abandon en cours…' : 'Abandonner' }}
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Zone des dés en attente (tour de l'adversaire) -->
       <div v-else-if="!isFinished" class="game-waiting card">
         <p class="waiting-text">⏳ En attente du tour de <strong>{{ currentPlayerPseudo }}</strong>…</p>
@@ -130,6 +156,7 @@ const possibleScores = ref({})
 // Dés et locks locaux (mis à jour après chaque roll)
 const localDice = ref([0, 0, 0, 0, 0])
 const localLocked = ref([false, false, false, false, false])
+const showAbandonModal = ref(false)
 
 let pollInterval = null
 
@@ -263,6 +290,23 @@ function applyRollResponse(data) {
     rollCount: data.rollCount,
     turnDeadlineAt: data.turnDeadlineAt,
     scores: data.scores,
+  }
+}
+
+async function handleAbandon() {
+  actionError.value = ''
+  actionLoading.value = true
+  try {
+    const { data } = await apiClient.post(`/games/${gameId}/abandon`)
+    game.value = data
+    localDice.value = [0, 0, 0, 0, 0]
+    localLocked.value = [false, false, false, false, false]
+    possibleScores.value = {}
+    showAbandonModal.value = false
+  } catch (e) {
+    actionError.value = e.response?.data?.message || 'Erreur lors de l\'abandon'
+  } finally {
+    actionLoading.value = false
   }
 }
 </script>
@@ -409,6 +453,107 @@ function applyRollResponse(data) {
   color: #aaa;
   font-size: 1.1rem;
   margin-bottom: 20px;
+}
+
+/* Bouton d'abandon */
+.abandon-section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.btn-abandon {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-abandon:hover:not(:disabled) {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn-abandon:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Modal d'abandon */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.modal-content p {
+  margin: 8px 0;
+  color: #666;
+  line-height: 1.4;
+}
+
+.warning-text {
+  color: #e74c3c;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #dee2e6;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
 }
 
 /* Feuilles de score */
