@@ -1,0 +1,436 @@
+@startuml jee_examen
+scale 0.5
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam nodesep 60
+skinparam ranksep 80
+
+' =====================
+'  ENUMS
+' =====================
+
+package "enums" #LightYellow {
+
+    enum PartieStatus {
+        EN_COURS
+        TERMINE
+        ABANDON
+    }
+
+    enum RuntimeGameStatus {
+        WAITING
+        IN_PROGRESS
+        FINISHED
+    }
+
+    enum Category {
+        ONE
+        TWO
+        THREE
+        FOUR
+        FIVE
+        SIX
+        BRELAN
+        CARRE
+        FULL
+        PETITE_SUITE
+        GRANDE_SUITE
+        YAM
+        CHANCE
+    }
+}
+
+' =====================
+'  ENTITIES
+' =====================
+
+package "entity" #LightBlue {
+
+    class Joueur {
+        - Long id
+        - String pseudo
+        - String mdp
+    }
+
+    class Parties {
+        - Long id
+        - Long idVainqueur
+        - PartieStatus status
+    }
+
+    class ColonneScore {
+        - Long id
+        - Long idPartie
+        - Long idJoueur
+        - Integer score1
+        - Integer score2
+        - Integer score3
+        - Integer score4
+        - Integer score5
+        - Integer score6
+        - Integer totalNumbers
+        - Integer totalNumbersBonus
+        - Integer scoreBrelan
+        - Integer scoreCarre
+        - Integer scoreFull
+        - Integer scorePetiteSuite
+        - Integer scoreGrandeSuite
+        - Integer scoreYam
+        - Integer scoreChance
+        - Integer scoreTotal
+    }
+}
+
+' =====================
+'  RUNTIME
+' =====================
+
+package "runtime" #LightGreen {
+
+    class GameState {
+        - Long partieId
+        - List<Long> playerIds
+        - Long currentPlayerId
+        - int[] dice
+        - boolean[] locked
+        - int rollCount
+        - long turnStartedAt
+        - long turnDeadlineAt
+        - Map<Long, Integer> extraYamCount
+        - RuntimeGameStatus status
+    }
+
+    class LobbyEntry {
+        - Long playerId
+        - long readyAt
+        - long expiresAt
+    }
+}
+
+' =====================
+'  DTOs
+' =====================
+
+package "dto" #LightPink {
+
+    class AuthRegisterRequest {
+        - String pseudo
+        - String password
+    }
+
+    class AuthLoginRequest {
+        - String pseudo
+        - String password
+    }
+
+    class AuthResponse {
+        - String token
+    }
+
+    class LobbyReadyResponse {
+        - boolean matched
+        - Long gameId
+        - Integer expiresInSec
+    }
+
+    class LockRequest {
+        - List<Integer> lockedIndexes
+    }
+
+    class ScoreRequest {
+        - Category category
+    }
+
+    class ScoreSheetDto {
+        - Long playerId
+        - String pseudo
+        - Integer score1
+        - Integer score2
+        - Integer score3
+        - Integer score4
+        - Integer score5
+        - Integer score6
+        - Integer totalNumbers
+        - Integer totalNumbersBonus
+        - Integer scoreBrelan
+        - Integer scoreCarre
+        - Integer scoreFull
+        - Integer scorePetiteSuite
+        - Integer scoreGrandeSuite
+        - Integer scoreYam
+        - Integer scoreChance
+        - Integer scoreTotal
+    }
+
+    class RollResponse {
+        - int[] dice
+        - boolean[] locked
+        - int rollCount
+        - int rollsLeft
+        - long turnDeadlineAt
+        - Map<Category, Integer> possibleScores
+        - List<ScoreSheetDto> scores
+    }
+
+    class GameResponse {
+        - Long gameId
+        - PartieStatus status
+        - Long currentPlayerId
+        - List<Long> playerIds
+        - int[] dice
+        - boolean[] locked
+        - int rollCount
+        - long turnDeadlineAt
+        - List<ScoreSheetDto> scores
+        - Long winnerId
+    }
+
+    class HallOfFameResponse {
+        - List<HallOfFameEntry> entries
+    }
+
+    class HallOfFameEntry {
+        - Long partieId
+        - String pseudo
+        - Integer score
+    }
+}
+
+' =====================
+'  REPOSITORIES
+' =====================
+
+package "repository" #Lavender {
+
+    interface JoueurRepository {
+        + Optional<Joueur> findByPseudo(String pseudo)
+        + boolean existsByPseudo(String pseudo)
+    }
+
+    interface PartiesRepository {
+    }
+
+    interface ColonneScoreRepository {
+        + Optional<ColonneScore> findByIdPartieAndIdJoueur(Long idPartie, Long idJoueur)
+        + List<ColonneScore> findByIdPartieOrderByIdJoueurAsc(Long idPartie)
+        + boolean existsByIdPartieAndIdJoueur(Long idPartie, Long idJoueur)
+        + List<HallOfFameRow> findTopByPartieStatus(PartieStatus status, Pageable pageable)
+    }
+}
+
+' =====================
+'  SERVICES
+' =====================
+
+package "service" #PeachPuff {
+
+    class JwtService {
+        - String secret
+        - long expirationMs
+        + String extractUsername(String token)
+        + String generateToken(String username)
+        + boolean isTokenValid(String token, UserDetails userDetails)
+        - boolean isTokenExpired(String token)
+        - SecretKey getSignInKey()
+    }
+
+    class AppUserDetailsService {
+        + UserDetails loadUserByUsername(String pseudo)
+    }
+
+    class AuthService {
+        + void register(AuthRegisterRequest request)
+        + String login(AuthLoginRequest request)
+    }
+
+    class AuthenticatedUserService {
+        + Joueur currentUser()
+    }
+
+    class DiceService {
+        - Random random
+        + int[] rollAll()
+        + int[] rerollUnlocked(int[] currentDice, boolean[] locked)
+        - int rollDie()
+    }
+
+    class ScoreService {
+        + Map<Category, Integer> possibleScores(int[] dice, ColonneScore sheet)
+        + int score(Category cat, int[] dice)
+        + int[] counts(int[] dice)
+        + boolean isFull(int[] counts)
+        + boolean isSmallStraight(int[] counts)
+        + boolean isLargeStraight(int[] counts)
+        + boolean isFilled(ColonneScore sheet, Category category)
+        + void setCategoryScore(ColonneScore sheet, Category category, int value)
+        + boolean allCategoriesFilled(ColonneScore sheet)
+        + Category firstUnfilledCategory(ColonneScore sheet)
+        + void recomputeTotals(ColonneScore sheet, int extraYamCount)
+    }
+
+    class GameStateManager {
+        - Map<Long, GameState> states
+        + Optional<GameState> get(Long gameId)
+        + void put(Long gameId, GameState gameState)
+        + void remove(Long gameId)
+    }
+
+    class GameService {
+        - long TURN_DURATION_MS
+        + Long createGame(Long playerA, Long playerB)
+        + GameResponse getGame(Long gameId, Long requesterId)
+        + RollResponse roll(Long gameId, Long playerId)
+        + RollResponse lockAndRoll(Long gameId, Long playerId, List<Integer> lockedIndexes)
+        + GameResponse score(Long gameId, Long playerId, Category category)
+        + void applyTimeoutPenaltyIfNeeded(Long gameId, GameState state)
+        - GameResponse completeTurnOrFinish(Long gameId, GameState state)
+        - void switchToNextPlayer(GameState state)
+    }
+
+    class LobbyService {
+        - long LOBBY_WAIT_MS
+        - LobbyEntry waitingPlayer
+        - Map<Long, Long> pendingGameIds
+        + LobbyReadyResponse ready(Long playerId)
+        + void cancelReady(Long playerId)
+        - void cleanupIfExpired(long now)
+    }
+
+    class HallOfFameService {
+        + HallOfFameResponse top(int limit)
+    }
+
+    class HallOfFameRow {
+        - Long partieId
+        - String pseudo
+        - Integer score
+    }
+}
+
+' =====================
+'  CONTROLLERS
+' =====================
+
+package "controller" #LightCyan {
+
+    class AuthController {
+        + void register(AuthRegisterRequest request)
+        + AuthResponse login(AuthLoginRequest request)
+    }
+
+    class GameController {
+        + GameResponse getGame(Long gameId)
+        + RollResponse roll(Long gameId)
+        + RollResponse lockAndRoll(Long gameId, LockRequest request)
+        + GameResponse score(Long gameId, ScoreRequest request)
+    }
+
+    class HallOfFameController {
+        + HallOfFameResponse hallOfFame(int limit)
+    }
+
+    class LobbyController {
+        + LobbyReadyResponse ready()
+        + void cancelReady()
+    }
+}
+
+' =====================
+'  RELATIONS - Enums
+' =====================
+
+Parties --> PartieStatus
+GameState --> RuntimeGameStatus
+ScoreRequest --> Category
+RollResponse --> Category
+GameResponse --> PartieStatus
+
+' =====================
+'  RELATIONS - Entities
+' =====================
+
+ColonneScore ..> Joueur : idJoueur (FK)
+ColonneScore ..> Parties : idPartie (FK)
+
+' =====================
+'  RELATIONS - Repositories
+' =====================
+
+JoueurRepository ..> Joueur : manages
+PartiesRepository ..> Parties : manages
+ColonneScoreRepository ..> ColonneScore : manages
+ColonneScoreRepository ..> HallOfFameRow : returns
+
+' =====================
+'  RELATIONS - DTOs
+' =====================
+
+RollResponse *-- ScoreSheetDto
+GameResponse *-- ScoreSheetDto
+HallOfFameResponse *-- HallOfFameEntry
+
+' =====================
+'  RELATIONS - Controllers
+' =====================
+
+AuthController --> AuthService
+AuthController ..> AuthRegisterRequest : uses
+AuthController ..> AuthLoginRequest : uses
+AuthController ..> AuthResponse : returns
+
+GameController --> GameService
+GameController --> AuthenticatedUserService
+GameController ..> LockRequest : uses
+GameController ..> ScoreRequest : uses
+GameController ..> RollResponse : returns
+GameController ..> GameResponse : returns
+
+HallOfFameController --> HallOfFameService
+HallOfFameController ..> HallOfFameResponse : returns
+
+LobbyController --> LobbyService
+LobbyController --> AuthenticatedUserService
+LobbyController ..> LobbyReadyResponse : returns
+
+' =====================
+'  RELATIONS - Services
+' =====================
+
+AuthService --> JoueurRepository
+AuthService --> JwtService
+AuthService ..> AuthRegisterRequest : uses
+AuthService ..> AuthLoginRequest : uses
+
+AppUserDetailsService --> JoueurRepository
+AppUserDetailsService ..|> "UserDetailsService" : implements
+
+AuthenticatedUserService --> JoueurRepository
+AuthenticatedUserService ..> Joueur : returns
+
+HallOfFameService --> ColonneScoreRepository
+HallOfFameService ..> HallOfFameRow : uses
+HallOfFameService ..> HallOfFameResponse : returns
+
+GameService --> PartiesRepository
+GameService --> ColonneScoreRepository
+GameService --> JoueurRepository
+GameService --> GameStateManager
+GameService --> DiceService
+GameService --> ScoreService
+GameService ..> GameState : reads/writes
+GameService ..> GameResponse : returns
+GameService ..> RollResponse : returns
+GameService ..> ScoreSheetDto : builds
+
+LobbyService --> GameService
+LobbyService ..> LobbyEntry : uses
+LobbyService ..> LobbyReadyResponse : returns
+
+GameStateManager ..> GameState : stores
+
+ScoreService ..> ColonneScore : reads/writes
+ScoreService ..> Category : uses
+
+@enduml

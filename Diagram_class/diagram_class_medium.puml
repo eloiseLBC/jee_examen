@@ -1,0 +1,181 @@
+@startuml jee_examen
+
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam packageStyle rectangle
+
+' =====================
+'  ENUMS
+' =====================
+
+enum PartieStatus {
+    EN_ATTENTE
+    EN_COURS
+    TERMINEE
+}
+
+' =====================
+'  ENTITIES
+' =====================
+
+package "entity" {
+
+    class Joueur {
+        - Long id
+        - String pseudo
+        - String mdp
+    }
+
+    class Parties {
+        - Long id
+        - Long idVainqueur
+        - PartieStatus status
+    }
+
+    class ColonneScore {
+        - Long id
+        - Long idPartie
+        - Long idJoueur
+        - Integer score1
+        - Integer score2
+        - Integer score3
+        - Integer score4
+        - Integer score5
+        - Integer score6
+        - Integer totalNumbers
+        - Integer totalNumbersBonus
+        - Integer scoreBrelan
+        - Integer scoreCarre
+        - Integer scoreFull
+        - Integer scorePetiteSuite
+        - Integer scoreGrandeSuite
+        - Integer scoreYam
+        - Integer scoreChance
+        - Integer scoreTotal
+    }
+}
+
+' =====================
+'  REPOSITORIES
+' =====================
+
+package "repository" {
+
+    interface JoueurRepository {
+        + Optional<Joueur> findByPseudo(String pseudo)
+        + boolean existsByPseudo(String pseudo)
+    }
+
+    interface PartiesRepository {
+    }
+
+    interface ColonneScoreRepository {
+        + Optional<ColonneScore> findByIdPartieAndIdJoueur(Long idPartie, Long idJoueur)
+        + List<ColonneScore> findByIdPartieOrderByIdJoueurAsc(Long idPartie)
+        + boolean existsByIdPartieAndIdJoueur(Long idPartie, Long idJoueur)
+        + List<HallOfFameRow> findTopByPartieStatus(PartieStatus status, Pageable pageable)
+    }
+}
+
+' =====================
+'  SERVICES (referenced)
+' =====================
+
+package "service" {
+
+    class AuthService {
+        + void register(AuthRegisterRequest request)
+        + String login(AuthLoginRequest request)
+    }
+
+    class GameService {
+        + GameResponse getGame(Long gameId, Long joueurId)
+        + RollResponse roll(Long gameId, Long joueurId)
+        + RollResponse lockAndRoll(Long gameId, Long joueurId, List<Integer> lockedIndexes)
+        + GameResponse score(Long gameId, Long joueurId, String category)
+    }
+
+    class HallOfFameService {
+        + HallOfFameResponse top(int limit)
+    }
+
+    class LobbyService {
+        + LobbyReadyResponse ready(Long joueurId)
+        + void cancelReady(Long joueurId)
+    }
+
+    class AuthenticatedUserService {
+        + Joueur currentUser()
+    }
+
+    class HallOfFameRow {
+        - Long idPartie
+        - String pseudo
+        - Integer scoreTotal
+    }
+}
+
+' =====================
+'  CONTROLLERS
+' =====================
+
+package "controller" {
+
+    class AuthController {
+        + void register(AuthRegisterRequest request)
+        + AuthResponse login(AuthLoginRequest request)
+    }
+
+    class GameController {
+        + GameResponse getGame(Long gameId)
+        + RollResponse roll(Long gameId)
+        + RollResponse lockAndRoll(Long gameId, LockRequest request)
+        + GameResponse score(Long gameId, ScoreRequest request)
+    }
+
+    class HallOfFameController {
+        + HallOfFameResponse hallOfFame(int limit)
+    }
+
+    class LobbyController {
+        + LobbyReadyResponse ready()
+        + void cancelReady()
+    }
+}
+
+' =====================
+'  RELATIONS
+' =====================
+
+' Entities <-> Enum
+Parties --> PartieStatus
+
+' Repositories extend JpaRepository (conceptual)
+JoueurRepository ..> Joueur : manages
+PartiesRepository ..> Parties : manages
+ColonneScoreRepository ..> ColonneScore : manages
+ColonneScoreRepository ..> HallOfFameRow : returns
+ColonneScoreRepository ..> PartieStatus : uses
+
+' ColonneScore references Joueur and Parties via FK
+ColonneScore ..> Joueur : idJoueur
+ColonneScore ..> Parties : idPartie
+
+' Controllers -> Services
+AuthController --> AuthService
+GameController --> GameService
+GameController --> AuthenticatedUserService
+HallOfFameController --> HallOfFameService
+LobbyController --> LobbyService
+LobbyController --> AuthenticatedUserService
+
+' Services -> Repositories
+AuthService ..> JoueurRepository : uses
+GameService ..> ColonneScoreRepository : uses
+GameService ..> PartiesRepository : uses
+HallOfFameService ..> ColonneScoreRepository : uses
+LobbyService ..> JoueurRepository : uses
+LobbyService ..> PartiesRepository : uses
+AuthenticatedUserService ..> JoueurRepository : uses
+
+@enduml

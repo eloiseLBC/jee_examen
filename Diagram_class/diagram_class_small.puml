@@ -1,0 +1,77 @@
+@startuml
+
+enum Category {
+  ONE
+  TWO
+  THREE
+  FOUR
+  FIVE
+  SIX
+  BRELAN
+  CARRE
+  FULL
+  PETITE_SUITE
+  GRANDE_SUITE
+  YAM
+  CHANCE
+}
+
+class Joueur {
+  id : Long
+  pseudo : String
+  mdp : String
+}
+
+class Partie {
+  id : Long
+  id_vainqueur : Long
+  status : String
+}
+
+class ColonneScore {
+  id : Long
+  id_partie : Long
+  id_joueur : Long
+  score_1 : int
+  score_2 : int
+  score_3 : int
+  score_4 : int
+  score_5 : int
+  score_6 : int
+  total_numbers : int
+  total_numbers_bonus : int
+  score_brelan : int
+  score_carre : int
+  score_full : int
+  score_petite_suite : int
+  score_grande_suite : int
+  score_yam : int
+  score_chance : int
+  score_total : int
+}
+
+class GameState {
+  partieId : Long
+  currentPlayerId : Long
+  dice : int[5]
+  locked : boolean[5]
+  rollCount : int
+  turnDeadline : long
+}
+
+class GameStateManager {
+  games : Map<Long, GameState>
+}
+
+class ScoreService {
+  computePossibleScores(dice, sheet)
+}
+
+Joueur "1" <-- "0..*" ColonneScore
+Partie "1" <-- "0..*" ColonneScore
+GameStateManager --> GameState
+GameState --> Partie
+ScoreService --> ColonneScore
+ScoreService --> Category
+
+@enduml
